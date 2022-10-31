@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 3</title>
+
+    <script>
+
+        // Array para informações de inventário.
+        var drofo = ['Anel da invisibilidade', 'Um par de botas mágicas', 'Um par de botas mágicas', 'Poção do sono', 'Poção da inocência', 'Poção da inocência'];
+        var torper = ['Capa da invisibilidade', 'Pedra do despertar', 'Varinha das varinhas', 'Poção da inocência', 'Poção da mentira', 'Poção da mentira', 'Poção anti-inteligência'];
+        
+        //Coletando as informações do inventário de Drofo e Torper.
+        document.write('<h2>Inventário inicial</h2> <strong>Drofo</strong>: ' + drofo.join(', ') + "<br><br>");
+        document.write('<strong>Torper</strong>: ' + torper.join(', ') + "<br>");
+        
+        //Inventário do Torper: removendo uma poção da mentira e a pedra do despertar!
+        torper.splice(4,1);
+        torper.splice(1,1);
+        
+        //Inventário do Torper: adicionando um par de botas mágicas do Drofo, por um escudo mágico e uma espada mágica
+        torper.push(drofo[1], 'Escudo mágico', 'Espada mágica');
+    
+        //Inventário do Drofo: Adicionaando um par de botas mágicas, ovo de dragão e uma coxinha 
+        drofo.push('Um par de botas mágicas', 'Ovo de dragão', 'Coxinha');
+    
+        //Inventário do Drofo: removendo um par de botas mágicas e a poção do sono
+        drofo.splice(1,1);
+        drofo.splice(2,1);
+
+        //Removendo a poção anti-inteligência do Torper
+        torper.splice(4,1);
+        
+        //Imprimindo o novo inventário do Drofo e Torper
+        document.write('<h2>Inventário atualizado</h2> <strong>Drofo</strong>: ' + drofo.join(', ') + "<br><br>");
+        document.write('<strong>Torper</strong>: ' + torper.join(', '));
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
