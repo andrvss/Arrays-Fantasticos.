@@ -1,10 +1,12 @@
-         var num = [];
+        var num = [];
         
         for(i=0; i<20; i++){
             num[i] = parseInt(prompt('Informe um número inteiro'));
         }
         document.write('<h2>Exercício para ler 20 números inteiros</h2>');
         document.write('<p>Os números informados foram:</p>' + num);
+
+        
 
         var num1 = [];
         var num2 = [];
@@ -21,6 +23,8 @@
         document.write('<h2>Exercício para ler 12 números</h2>');
         document.write('<p>Os números informados maiores que 50 foram:</p><strong>'+ num1 + '</strong>');
         document.write('<p>E os números informados menores que 50 foram:</p><strong>' + num2 + '</strong>');
+
+
             
         // Array para informações de inventário.
         var drofo = ['Anel da invisibilidade', 'Um par de botas mágicas', 'Um par de botas mágicas', 'Poção do sono', 'Poção da inocência', 'Poção da inocência'];
